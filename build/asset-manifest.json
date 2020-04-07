@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Simulador/static/css/main.5f361e03.chunk.css",
+    "main.js": "/Simulador/static/js/main.722d15e3.chunk.js",
+    "main.js.map": "/Simulador/static/js/main.722d15e3.chunk.js.map",
+    "runtime-main.js": "/Simulador/static/js/runtime-main.d3903c1a.js",
+    "runtime-main.js.map": "/Simulador/static/js/runtime-main.d3903c1a.js.map",
+    "static/js/2.00edb1a1.chunk.js": "/Simulador/static/js/2.00edb1a1.chunk.js",
+    "static/js/2.00edb1a1.chunk.js.map": "/Simulador/static/js/2.00edb1a1.chunk.js.map",
+    "index.html": "/Simulador/index.html",
+    "precache-manifest.4e4a8c472207c611634c902742676744.js": "/Simulador/precache-manifest.4e4a8c472207c611634c902742676744.js",
+    "service-worker.js": "/Simulador/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/Simulador/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.00edb1a1.chunk.js.LICENSE.txt": "/Simulador/static/js/2.00edb1a1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d3903c1a.js",
+    "static/js/2.00edb1a1.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.722d15e3.chunk.js"
+  ]
+}
