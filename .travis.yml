@@ -1,18 +1,22 @@
 language: node_js
 node_js:
-  - 12.14.0
+- 12.14.0
 cache:
   directories:
   - node_modules
 before_install:
-  - sudo apt-get update
+  - composer config --global github-oauth.github.com "$GITHUB_TOKEN"
+- sudo apt-get update
 script:
-  - npm run build
+- npm run build
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN
+  github_token: "$GITHUB_TOKEN"
   edge: true
   local_dir: build
   on:
     branch: master
+env:
+  global:
+    secure: BafFLfvJvDvS1KmYno+eut4of4LYktU2j2HkWYqk54nTlwz2J6xCgtLFjKRL1BjqLl3LyHWxzdC1R/8vQP2oNG7uv985QFm4Qc6N/bOlMyUgEY1Y9wBtPvtHFKDyNZteEda+RV4bJWVpl9IXuqW3LT7yhp3EUUDTP/rbWdkelgKYNI7Pn/roVoB2sInCPa+PoWdm9Selb3ph7f+FCZvg4pd7gh1OVzCo0JXSSCQ8RYne4+I2ai9T5NZdhE0YfMlby04CJVctMAnAECqr8B93HpT8rJp5xdiSxrpVFyhU+3u+EfEjOrZMt7FXYCSRH3+/qDcRjNr0VNfausMapbuM8aj65qDzWZmPVs9QDUNt8IMoJv+Om2GPRgvDmGuRmxa1qMUkAjYhEZs3LEpTtUbqZVkP1HHTF9/7PJmH1luo1Ppy1zvJJA246HVZBe3kBzJYrYlDbu+Nh69MGZR+tvF7g3lOiCZHLcxilXqOZgdQOnHZx0uf8KjzNcFUbZlZS97idYrUU6KduX9EFb1DrlHZlYxlF7OxYzfEyxcTmTrpbrDvy0Gs1wVRJ6aOpofnPGujtC00ah8MEmmxYZW+pZJ0R3rP7cCAnlhZED5Js0u8zQ1yP5l/APf6bcKVPOAFldVF4DbeAAfe/puhtySQX4jdLFHG99L6DrNPTvBn3DgDsj8=
