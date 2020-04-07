@@ -2,12 +2,11 @@ import React from 'react';
 import './App.css';
 function App() {
   return (
-
     <div className="App">
       <nav>
         Este simulador no es oficial, es un proyecto para ayudar con la asignatura
         </nav>
-      <header className="Simulador 19-20">
+      <header>
         <h1>Simulador 2019-2020</h1>
       </header>
       <body>
